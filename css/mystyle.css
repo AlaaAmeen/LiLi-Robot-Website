@@ -2,6 +2,10 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+.navbar-toggler{
+    box-shadow: 0px 2px 10px #ffffff;
+}
+
 nav {
     box-shadow: 0px 2px 10px #aaaaaaff;
     background-color: white;
