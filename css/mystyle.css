@@ -1,18 +1,20 @@
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(225, 245, 236);
 }
 
 .navbar-toggler{
-    box-shadow: 0px 2px 10px #ffffff;
+    box-shadow: 0px 2px 10px gray;
 }
 
 nav {
     box-shadow: 0px 2px 10px #aaaaaaff;
-    background-color: white;
+    background-color:rgb(187, 233, 215);
+    margin-top: -5px;
 }
 
 .navbar-toggler {
-    background-color: #c4f1f5ff;
+    background-color: white;
 }
 
 .nav-link {
@@ -20,7 +22,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: #1a939eff !important;
+    color: gray !important;
 }
 
 
@@ -62,6 +64,8 @@ nav {
         top: 100px;
         left: 20px;
         box-shadow: 0px 2px 10px #888888ff;
+        transform: translateY(3px);
+        transition: all 2s ease-in-out;
     }
 }
 
@@ -84,12 +88,14 @@ nav {
         top: 100px;
         left: 30px;
         box-shadow: 0px 2px 10px #888888ff;
+        transform: translateY(3px);
+        transition: all 2s ease-in-out;
     }
 }
 
 @media only screen and (min-width: 651px){
     .loaded .homeCover {
-        margin-top: 70px;
+        margin-top: 80px;
         width: 100%;
         height: 500px;
         transform: translateY(3px);
@@ -106,5 +112,46 @@ nav {
         top: 250px;
         left: 50px;
         box-shadow: 0px 2px 10px #888888ff;
+        transform: translateY(3px);
+        transition: all 2s ease-in-out;
     }
+}
+
+.aboutContainer {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.aboutContainer h3 {
+    background-color:rgb(225, 245, 236);
+}
+
+.about > div{
+    font-style: italic;
+    text-indent: 30px;
+    width: 1150px;
+}
+
+.about > div::first-letter{
+    font-weight: bold;
+    font-size: 25px;
+    color: #1a939eff;
+}
+
+video{
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px #888888ff;
+    margin-top: 30px;
+}
+
+.AboutHeading{
+    color: #1a939eff; 
+    width: 100%; 
+    color: black;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 10px #888888ff;
+    margin-bottom: 20px;
 }
