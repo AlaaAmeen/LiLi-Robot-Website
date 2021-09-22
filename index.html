@@ -11,6 +11,7 @@
 </head>
 <body>
 
+  <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#">
             <img src="images/homeLogo.png" width="65" height="62" class="d-inline-block align-top" alt="">
@@ -26,24 +27,25 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutSection">About</a>
+              <a class="nav-link" href="#aboutSectionID">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#componentProject">Components</a>
+                <a class="nav-link" href="#componentSection">Components</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">How to Play</a>
+                <a class="nav-link" href="#steps">How to Play</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Upcoming Games</a>
+                <a class="nav-link" href="#UpcomingGamesID">Upcoming Games</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Feedbacks</a>
+                <a class="nav-link" href="#feedback">Feedbacks</a>
             </li>
           </ul>
         </div>
       </nav>
 
+      <!-- Home Cover -->
     <div class="container-fluid frame">
       <div class="row">
         <div class="col-xs-12">
@@ -59,7 +61,8 @@
           </ul>
         </div>
 
-        <div class="aboutContainer">
+        <!-- About -->
+        <div id="aboutSectionID" class="aboutContainer">
           <div class="col-xs-12">
             <h3 id="aboutSection" class="AboutHeading">About</h3>
             <div>
@@ -72,14 +75,90 @@
             <div>
               This game combines education, fun and movement for students because at this stage they love to move and play with games. <span style="font-weight: bold;">For more information please play the video :)</span>
             </div>
-            <video height="280" width="100%" controls>
+            
+            <video height="280" width="60%" controls>
               <source src="videos/LiliRobot2.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
+        </div>  
+      <h4>LiLi Robot Educational Game consists of:</h4> 
+        
+      </div>
+    </div>
+
+    <!-- Components -->
+    <div id="componentSection" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+          <img class="card-img-top" src="images/homeLogo.png" alt="Robot Body">
+          <div class="card-title-top">Robot Body</div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+          <img class="card-img-top" src="images/mat.jpg" alt="Mat">
+          <div class="card-title-top">Mat/Map</div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+          <img class="card-img-top" src="images/LCD.jpeg" alt="LCD">
+          <div class="card-title-top">Digital LCD</div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+          <img class="card-img-top" src="images/keybad.jpg" alt="keybad">
+          <div class="card-title-top">&nbsp;&nbsp;keybad</div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- How to Play -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12" id="steps">
+            <h4 style="font-family: 'Brush Script'; font-weight: bold; font-size: 30px;">Very easy steps to use LiLi Robot (Current Version):</h4>
+
+            <ol>
+              <li>Switch on the Robot</li>
+              <li>The teacher/parent will ask you a question <br> (ex: Construct a word start with letter M)</li>
+              <li>Use the onboard keypad to navigate the robot to the desired cells.<br>(ex: if the answer is MAN, move the robot to M then A then N)</li>
+              <li>The letters will be shown in order on the LCD</li>
+              <li>Read the word</li>
+            </ol>
         </div>
       </div>
     </div>
+
+    <!-- Upcoming games -->
+    <div class="UpcomingGames" id="UpcomingGamesID">
+      <div class="col-xs-12">
+        <h3 id="aboutSection" class="AboutHeading UpcomingGamesHeading">Upcoming Games</h3>
+        <div>
+          The most important thing we have is your son or daughter, so we try hard to provide them with interesting information. Wait for us in other games like what will be explained in the video below and others.
+        </div>
+        
+        <video height="280" width="60%" controls>
+          <source src="videos/wheelRotator.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div> 
+
+    <!--Feedback-->
+    <div  id="feedback" class="col-xs-12">
+      Leaving feedbacks means a lot to me, I will receive all via email :)
+      <form action="https://formsubmit.co/alaaameen34@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Feedback about LiLi Robot Website">
+        <input type="email" name="email" placeholder="Email Address" required><br>
+        <input type="text" name="feedback" placeholder="Write your feedback here with your name :)" required><br>
+        <button id="send" class="btn btn-primary" onsubmit="alert('Thank you for sharing your feedback with me!')" type="submit">Send</button>
+      </form>
+  </div>
+
+
+    <footer>&copy; Alaa Amin 2021</footer>
 
     <script src="Js/jQuery.js" ></script>
     <script src="js/popper.js"></script>
