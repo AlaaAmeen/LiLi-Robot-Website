@@ -90,24 +90,20 @@
     <!-- Components -->
     <div id="componentSection" class="container-fluid">
       <div class="row">
-        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+        <div class="col-sm-6 col-lg-3" id="componentItem">
           <img class="card-img-top" src="images/homeLogo.png" alt="Robot Body">
-          <div class="card-title-top">Robot Body</div>
         </div>
         
-        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+        <div class="col-sm-6 col-lg-3" id="componentItem">
           <img class="card-img-top" src="images/mat.jpg" alt="Mat">
-          <div class="card-title-top">Mat/Map</div>
         </div>
 
-        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+        <div class="col-sm-6 col-lg-3" id="componentItem">
           <img class="card-img-top" src="images/LCD.jpeg" alt="LCD">
-          <div class="card-title-top">Digital LCD</div>
         </div>
 
-        <div class="col-sm-6 col-lg-3" id="componentItem" style="width: 18rem;">
+        <div class="col-sm-6 col-lg-3" id="componentItem">
           <img class="card-img-top" src="images/keybad.jpg" alt="keybad">
-          <div class="card-title-top">&nbsp;&nbsp;keybad</div>
         </div>
 
 
@@ -127,38 +123,38 @@
               <li>Read the word</li>
             </ol>
         </div>
+
+        <!-- Upcoming games -->
+        <div class="col-xs-12">
+          <div class="UpcomingGames" id="UpcomingGamesID">
+          <h3 id="aboutSection" class="AboutHeading UpcomingGamesHeading">Upcoming Games</h3>
+          <div>
+            The most important thing we have is your son or daughter, so we try hard to provide them with interesting information. Wait for us in other games like what will be explained in the video below and others.
+          </div>
+          
+          <video height="280" width="60%" controls>
+            <source src="videos/wheelRotator.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div> 
+
+      <!--Feedback-->
+      <div id="feedback" class="col-xs-12">
+        Leaving feedbacks means a lot to me, I will receive all via email :)
+        <form action="https://formsubmit.co/alaaameen34@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Feedback about LiLi Robot Website">
+          <input type="email" name="email" placeholder="Email Address" required><br>
+          <input type="text" name="feedback" placeholder="Write your feedback here with your name :)" required><br>
+          <button id="send" class="btn btn-primary" onsubmit="alert('Thank you for sharing your feedback with me!')" type="submit">Send</button>
+        </form>
+    </div>
       </div>
     </div>
 
-    <!-- Upcoming games -->
-    <div class="UpcomingGames" id="UpcomingGamesID">
-      <div class="col-xs-12">
-        <h3 id="aboutSection" class="AboutHeading UpcomingGamesHeading">Upcoming Games</h3>
-        <div>
-          The most important thing we have is your son or daughter, so we try hard to provide them with interesting information. Wait for us in other games like what will be explained in the video below and others.
-        </div>
-        
-        <video height="280" width="60%" controls>
-          <source src="videos/wheelRotator.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div> 
-
-    <!--Feedback-->
-    <div  id="feedback" class="col-xs-12">
-      Leaving feedbacks means a lot to me, I will receive all via email :)
-      <form action="https://formsubmit.co/alaaameen34@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Feedback about LiLi Robot Website">
-        <input type="email" name="email" placeholder="Email Address" required><br>
-        <input type="text" name="feedback" placeholder="Write your feedback here with your name :)" required><br>
-        <button id="send" class="btn btn-primary" onsubmit="alert('Thank you for sharing your feedback with me!')" type="submit">Send</button>
-      </form>
-  </div>
-
-
     <footer>&copy; Alaa Amin 2021</footer>
+    
 
     <script src="Js/jQuery.js" ></script>
     <script src="js/popper.js"></script>
